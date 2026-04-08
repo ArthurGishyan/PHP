@@ -55,3 +55,33 @@ $message = match ($httpStatusCode) {
 var_dump($message);// string(12) "Server error"
 echo "<br>";
 echo $message; //server error
+echo "<br>";
+
+$orderAmount = 5000;
+$discountAmount = 0;
+
+if ($orderAmount > 10000) {
+    $discountAmount = 15;
+    echo "Your discount is $discountAmount%";
+}
+elseif ($orderAmount === 100000) {
+    $discountAmount = 20;
+    echo "Your discount is $discountAmount%";
+}
+else {
+    echo "you don`t have discount";
+}
+
+//. and .=
+echo "<br>";
+$firstText = "Hello";
+$secondText = "World";
+
+$combinedText = $firstText . $secondText; // hello world
+echo $combinedText;
+echo "<br>";
+//!text
+$firstText .= "!";
+$resultText = $firstText;
+echo $resultText; //hello!
+
