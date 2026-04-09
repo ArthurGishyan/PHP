@@ -66,3 +66,4 @@ function power(int $x, int $n) : int|float {
     return $x * power($x, $n - 1);
 }
 echo power(2,3);
+
