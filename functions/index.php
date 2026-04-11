@@ -67,3 +67,18 @@ function power(int $x, int $n) : int|float {
 }
 echo power(2,3);
 
+//global and local scope
+$score = 100; //global variable
+
+function addBonus() {
+    global $score;
+    $score += 50;
+    echo $score;
+} 
+addBonus();
+
+function calcArea(int $width, int $height) : int {
+    return $width * $height;
+}
+echo "<br>";
+echo calcArea(5, 10);

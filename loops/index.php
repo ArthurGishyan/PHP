@@ -23,3 +23,11 @@ while(true) {
     }
     echo("Your balance is $balance <br>");
 }
+
+//nested loops
+for ($i = 1; $i <= 2; $i++) {
+    for ($j = 1; $j <= 7; $j++) {
+        echo "Week $i, Day $j <br>";
+    }
+    echo "<br>";
+}
