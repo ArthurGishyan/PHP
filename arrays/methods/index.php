@@ -52,9 +52,9 @@ echo "Total Score: " . $totalScore;
 echo "<br>";
 
 $inventory = [
-    ["name" => "Зелье здоровья", "weight" => 0.5, "qty" => 5], // 5 зелий по 0.5 кг
-    ["name" => "Железный меч", "weight" => 3.0, "qty" => 1],   // 1 меч на 3 кг
-    ["name" => "Золотые монеты", "weight" => 0.01, "qty" => 200] // 200 монет по 0.01 кг
+    ["name" => "Health Potion", "weight" => 0.5, "qty" => 5],
+    ["name" => "Iron Sword", "weight" => 3.0, "qty" => 1],
+    ["name" => "Gold Coins", "weight" => 0.01, "qty" => 200] 
 ];
 
 $totalWeight = array_reduce($inventory, function($sum, $item) {
@@ -62,7 +62,6 @@ $totalWeight = array_reduce($inventory, function($sum, $item) {
 }, 0);
 echo "Total weight". $totalWeight;
 
-//together
 $users = [
     ["name" => " aRthur ", "email" => "arthur@test.com", "age" => 25],
     ["name" => "JOHN", "email" => "", "age" => 17],
