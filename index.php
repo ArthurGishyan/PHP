@@ -5,7 +5,7 @@ $userName = "User1";
 $userAge = 18;
 $city = "Yerevan";
 
-echo $userName, " ", $userAge, "years old from ", $city;
+echo $userName, " ", $userAge, " years old from ", $city;
 
 //zval can contain int string bool floan null
 
@@ -47,8 +47,8 @@ echo "<br>";
 $httpStatusCode = 404;
 
 $message = match ($httpStatusCode) {
-    200 => "Not Found",
-    404 => "Server error",
+    200 => "OK",
+    404 => "Not Found",
     default => "status undefined",
 };
 
@@ -60,11 +60,11 @@ echo "<br>";
 $orderAmount = 5000;
 $discountAmount = 0;
 
-if ($orderAmount > 10000) {
+if ($orderAmount >= 10000) {
     $discountAmount = 15;
     echo "Your discount is $discountAmount%";
 }
-elseif ($orderAmount === 100000) {
+elseif ($orderAmount >= 100000) {
     $discountAmount = 20;
     echo "Your discount is $discountAmount%";
 }
